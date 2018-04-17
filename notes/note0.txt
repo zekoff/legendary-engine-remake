@@ -1,0 +1,3 @@
+TODO
+- Make ships face the direction they're moving
+- Spawn ships at center of planet and have them move out into orbit
