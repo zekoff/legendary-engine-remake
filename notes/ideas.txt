@@ -1,0 +1,71 @@
+15-30 minute game sessions?
+
+Fun parts: seeing swarms of ships, seeing ships flow b/w planets, paring down the interface to
+see insights.
+
+Idea for ship rotating: when sending to new planet, pick new angle, orbit distance. Calculate
+new target point as if orbiting the new planet. Send from current point to new point. On
+arrival, begin orbiting.
+
+Combat
+- Can only take place over POIs?
+- Or ships can fight en route?
+- Ships can be upgraded
+- Should ships have 1-on-1 combat, w/ each shot simulated?
+- Shots that strike the planet could damage it?
+
+Consider not having a slush fund of empire-wide resources, but rather, resources are simulated
+physical objects that must be transferred between planets/systems. Gives weight to the 
+economic layer.
+
+Maybe tech can be the only empire-wide slush fund, which makes sense.
+
+Maybe tech/culture is how you maintain star lanes? Create them on that layer? Cost resources to
+maintain?
+
+Multiple victory conditions. Maybe culture = civilians? That's what you model/simulate, and they
+multiple the other factors like economic?
+
+Can build things visible on planets. Zoom in to see them
+
+Thematic hole... are you controlling planets? Systems? Starbases?
+
+Perahps third layer (cultural?) is the one where you build infrastructure?
+
+Or the base layer is where you build
+
+Problems is that the third layer, I don't have a cohesive raison d'etre yet.
+- Military layer, route combat ships
+- Economic layer, route resources
+- ... third layer?
+
+Should each layer stand on its own as a game, even if a simple one? Or should the game require
+diligent switching between layers?
+
+Maybe there shouldn't be a third layer/lens. Model only economic and military. But, that doesn't
+capture a third dimension that I want to model. The culture/happiness of the empire.
+
+Maybe cultural layer shows expanding rings as the influence of the system grows. Populate empty
+space w/ minor elements of interest that only are interacted with by civilians.
+
+Military/corporate/civilians?
+
+Pins or fleet markers in fleets as they travel?
+
+Cannot connect trade routes or military supply lines b/w hostile planets? Can only send fleets, 
+trade missions, diplomatic envoys?
+
+Maybe trade routes can only be maintained on star lanes, same for supply lines.
+
+But fleets, trade missions, envoys can be sent through deep space?
+
+So, the third layer (civilian) is used to create and maintain star lanes? [Or perhaps you need
+a star lane building on a planet, and it's connected to the closest other planet with a matching
+building?]
+
+Star lanes passively boost income, culture, etc. but require resources to build?
+
+Trade routes move resources on lines. Directed. Military supply lines move ships, are directed.
+Starlanes are not directed?
+
+Maybe add back credits?

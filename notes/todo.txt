@@ -1,0 +1,6 @@
+TODO
+[ ] Make ships face the direction they're moving
+[ ] Spawn ships at center of planet and have them move out into orbit
+[ ] Add zoom and camera control
+[ ] Add layer interface
+[ ] Add feature to drag between planets

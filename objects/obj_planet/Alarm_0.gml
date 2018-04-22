@@ -14,12 +14,15 @@ alarm_set(0, 60/spawn_rate);
 /// @DnDSaveInfo : "objectid" "7cbd185a-39ea-42b8-b84e-78d91651bf52"
 _new_ship = instance_create_layer(x + 0, y + 0, "Instances", obj_ship_red);
 
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 1808FCD3
-/// @DnDArgument : "expr" "id"
-/// @DnDArgument : "var" "_new_ship.orbiting"
-_new_ship.orbiting = id;
+/// @DnDAction : YoYo Games.Common.Execute_Script
+/// @DnDVersion : 1.1
+/// @DnDHash : 44D81E0C
+/// @DnDInput : 2
+/// @DnDArgument : "script" "scr_enter_orbit"
+/// @DnDArgument : "arg" "_new_ship"
+/// @DnDArgument : "arg_1" "self"
+/// @DnDSaveInfo : "script" "3dc6b96c-0375-4758-baf9-834ada76d6ba"
+script_execute(scr_enter_orbit, _new_ship, self);
 
 /// @DnDAction : YoYo Games.Common.Execute_Script
 /// @DnDVersion : 1.1

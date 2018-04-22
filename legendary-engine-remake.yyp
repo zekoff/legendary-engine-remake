@@ -4,7 +4,7 @@
     "mvc": "1.0",
     "IsDnDProject": true,
     "configs": [
-        
+        "default"
     ],
     "option_ecma": false,
     "parentProject": {
@@ -407,6 +407,14 @@
             }
         },
         {
+            "Key": "2b286659-8216-4bab-9cb3-0ab7c63cb9f2",
+            "Value": {
+                "id": "6cefda15-385e-4331-a609-5bf1559a9cfd",
+                "resourcePath": "objects\\obj_drag_target\\obj_drag_target.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2befc192-a5ba-4ea5-aa1f-5df90217ce5f",
             "Value": {
                 "id": "4255e9ca-63c4-47ce-8203-94ab2a17b1c9",
@@ -455,6 +463,14 @@
             }
         },
         {
+            "Key": "37ee9469-c91d-40d1-8e01-04f8141c2c9f",
+            "Value": {
+                "id": "6d906766-d058-45cb-8c3e-4d1bccbb7c51",
+                "resourcePath": "notes\\ideas.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "37f70332-5171-41ac-8cc7-a264718f177d",
             "Value": {
                 "id": "d3967a74-b5a0-4cfb-b4a8-693a28377b38",
@@ -483,6 +499,14 @@
             "Value": {
                 "id": "d8e44607-b42e-4c84-a51e-9797f9ef8474",
                 "resourcePath": "scripts\\TGMS_TweenFire\\TGMS_TweenFire.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3dc6b96c-0375-4758-baf9-834ada76d6ba",
+            "Value": {
+                "id": "a6993f97-fa81-4b59-9684-3368d0fcca80",
+                "resourcePath": "scripts\\scr_enter_orbit\\scr_enter_orbit.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1690,7 +1714,7 @@
             "Key": "d6c7c12e-ca50-432d-8758-2bfd93a361bb",
             "Value": {
                 "id": "f5ff6e48-8535-4a53-94fa-6b6e0dff4291",
-                "resourcePath": "notes\\note0.yy",
+                "resourcePath": "notes\\todo.yy",
                 "resourceType": "GMNotes"
             }
         },
