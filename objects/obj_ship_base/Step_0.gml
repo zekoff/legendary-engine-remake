@@ -37,4 +37,19 @@ if(orbiting != noone)
 	/// @DnDArgument : "var_1" "y"
 	x = orbiting.x + _new_point_array[0];
 	y = orbiting.y + _new_point_array[1];
+
+	/// @DnDAction : YoYo Games.Movement.Set_Direction_Point
+	/// @DnDVersion : 1
+	/// @DnDHash : 3782A767
+	/// @DnDParent : 41C280FB
+	/// @DnDArgument : "x" "xprevious"
+	/// @DnDArgument : "y" "yprevious"
+	direction = point_direction(x, y, xprevious, yprevious);
+
+	/// @DnDAction : YoYo Games.Instances.Sprite_Rotate
+	/// @DnDVersion : 1
+	/// @DnDHash : 44371137
+	/// @DnDParent : 41C280FB
+	/// @DnDArgument : "angle" "direction + 180"
+	image_angle = direction + 180;
 }

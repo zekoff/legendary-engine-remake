@@ -1,0 +1,6 @@
+Lessons Learned
+
+Instance IDs are apparently stored as reals, but you can reference properties of them
+using dot notation in code? And you can declare a variable in the IDE as a real and yet
+set it to "noone". Typing seems very loose in the IDE, although the documentation does
+talk about several distinct types under the hood.

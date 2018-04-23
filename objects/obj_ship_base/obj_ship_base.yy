@@ -66,9 +66,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "noone",
             "varName": "orbiting",
-            "varType": 0
+            "varType": 5
         },
         {
             "id": "9cc3748b-06a7-47a0-a008-256b45ab5ff6",

@@ -1,6 +1,6 @@
 1.0.0←ed6a955d-5826-4f98-a450-10b414266c27←ed6a955d-5826-4f98-a450-10b414266c27|{
     "option_gameguid": "9ec7e43a-027f-4790-9370-70f5bb050d27",
-    "option_lastchanged": "06 April 2018 20:18:54",
+    "option_lastchanged": "22 April 2018 21:40:27",
     "option_author": "zekoff",
     "option_sci_usesci": true,
     "option_game_speed": 60
