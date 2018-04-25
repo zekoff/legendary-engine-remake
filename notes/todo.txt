@@ -4,3 +4,4 @@ TODO
 [ ] Add zoom and camera control
 [ ] Add layer interface
 [ ] Add feature to drag between planets
+[ ] Verify that you can't create a starlane with the same planet as start/end point

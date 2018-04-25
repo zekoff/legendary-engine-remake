@@ -52,14 +52,50 @@ if ((l5981DD1F_0 > 0))
 		case "culture":
 			/// @DnDAction : YoYo Games.Common.Execute_Script
 			/// @DnDVersion : 1.1
-			/// @DnDHash : 0227FB3D
+			/// @DnDHash : 62104E21
 			/// @DnDInput : 2
 			/// @DnDParent : 364FB49C
-			/// @DnDArgument : "script" "scr_create_starlane"
+			/// @DnDArgument : "var" "_starlane"
+			/// @DnDArgument : "var_temp" "1"
+			/// @DnDArgument : "script" "scr_check_connected"
 			/// @DnDArgument : "arg" "_source_planet_id"
 			/// @DnDArgument : "arg_1" "_target_planet_id"
-			/// @DnDSaveInfo : "script" "b5211b21-fedf-49f1-802d-f4e7c937679a"
-			script_execute(scr_create_starlane, _source_planet_id, _target_planet_id);
+			/// @DnDSaveInfo : "script" "2f912e45-02ae-409f-8e61-16adb589cc7c"
+			var _starlane = script_execute(scr_check_connected, _source_planet_id, _target_planet_id);
+		
+			/// @DnDAction : YoYo Games.Common.If_Expression
+			/// @DnDVersion : 1
+			/// @DnDHash : 42F5D069
+			/// @DnDParent : 364FB49C
+			/// @DnDArgument : "expr" "_starlane"
+			/// @DnDArgument : "not" "1"
+			if(!(_starlane))
+			{
+				/// @DnDAction : YoYo Games.Common.Execute_Script
+				/// @DnDVersion : 1.1
+				/// @DnDHash : 0227FB3D
+				/// @DnDInput : 2
+				/// @DnDParent : 42F5D069
+				/// @DnDArgument : "script" "scr_create_starlane"
+				/// @DnDArgument : "arg" "_source_planet_id"
+				/// @DnDArgument : "arg_1" "_target_planet_id"
+				/// @DnDSaveInfo : "script" "b5211b21-fedf-49f1-802d-f4e7c937679a"
+				script_execute(scr_create_starlane, _source_planet_id, _target_planet_id);
+			}
+		
+			/// @DnDAction : YoYo Games.Common.Else
+			/// @DnDVersion : 1
+			/// @DnDHash : 0E8E32C8
+			/// @DnDParent : 364FB49C
+			else
+			{
+				/// @DnDAction : YoYo Games.Instances.Destroy_Instance
+				/// @DnDVersion : 1
+				/// @DnDHash : 12CF6B9E
+				/// @DnDApplyTo : _starlane
+				/// @DnDParent : 0E8E32C8
+				with(_starlane) instance_destroy();
+			}
 			break;
 	}
 }

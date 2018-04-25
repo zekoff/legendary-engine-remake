@@ -29,6 +29,43 @@ with(obj_ship_red) {
 		/// @DnDArgument : "var" "orbiting"
 		orbiting = noone;
 	
+		/// @DnDAction : YoYo Games.Common.Temp_Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 54E1267C
+		/// @DnDParent : 5276EADF
+		/// @DnDArgument : "var" "_fleet_travel_speed"
+		/// @DnDArgument : "value" "360"
+		var _fleet_travel_speed = 360;
+	
+		/// @DnDAction : YoYo Games.Common.Execute_Script
+		/// @DnDVersion : 1.1
+		/// @DnDHash : 52E8CAB5
+		/// @DnDInput : 2
+		/// @DnDParent : 5276EADF
+		/// @DnDArgument : "var" "_connected"
+		/// @DnDArgument : "var_temp" "1"
+		/// @DnDArgument : "script" "scr_check_connected"
+		/// @DnDArgument : "arg" "_source_planet_id"
+		/// @DnDArgument : "arg_1" "_target_planet_id"
+		/// @DnDSaveInfo : "script" "2f912e45-02ae-409f-8e61-16adb589cc7c"
+		var _connected = script_execute(scr_check_connected, _source_planet_id, _target_planet_id);
+	
+		/// @DnDAction : YoYo Games.Common.If_Expression
+		/// @DnDVersion : 1
+		/// @DnDHash : 08D31A98
+		/// @DnDParent : 5276EADF
+		/// @DnDArgument : "expr" "_connected"
+		if(_connected)
+		{
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 1BEE58EB
+			/// @DnDParent : 08D31A98
+			/// @DnDArgument : "expr" "_fleet_travel_speed/6"
+			/// @DnDArgument : "var" "_fleet_travel_speed"
+			_fleet_travel_speed = _fleet_travel_speed/6;
+		}
+	
 		/// @DnDAction : YoYo Games.Common.Execute_Script
 		/// @DnDVersion : 1.1
 		/// @DnDHash : 2287BA21
@@ -42,10 +79,10 @@ with(obj_ship_red) {
 		/// @DnDArgument : "arg_2" "_target_planet_id.x"
 		/// @DnDArgument : "arg_3" "_target_planet_id.y"
 		/// @DnDArgument : "arg_4" "0"
-		/// @DnDArgument : "arg_5" "60"
+		/// @DnDArgument : "arg_5" "_fleet_travel_speed"
 		/// @DnDArgument : "arg_6" "EaseLinear"
 		/// @DnDSaveInfo : "script" "145cd80a-8de0-483d-8ca5-0d6484d42eb2"
-		var _tween = script_execute(TweenEasyMove, x, y, _target_planet_id.x, _target_planet_id.y, 0, 60, EaseLinear);
+		var _tween = script_execute(TweenEasyMove, x, y, _target_planet_id.x, _target_planet_id.y, 0, _fleet_travel_speed, EaseLinear);
 	
 		/// @DnDAction : YoYo Games.Common.Execute_Script
 		/// @DnDVersion : 1.1
