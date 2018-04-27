@@ -4,3 +4,9 @@ Instance IDs are apparently stored as reals, but you can reference properties of
 using dot notation in code? And you can declare a variable in the IDE as a real and yet
 set it to "noone". Typing seems very loose in the IDE, although the documentation does
 talk about several distinct types under the hood.
+
+When drawing object sprites to GUI layer, the object's collision (and therefore mouse/touch)
+input box still exists at its world coordinates. So if you change the camera such that 
+cameraX or cameraY coordinates no longer match world x/y coordinates, a click on the object's
+visual in the GUI won't register as a click on the object in the room. So it's just so easy
+to just draw objects on the GUI and have clickable GUI elements.
