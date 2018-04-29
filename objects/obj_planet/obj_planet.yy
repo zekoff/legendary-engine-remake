@@ -53,6 +53,36 @@
             "enumb": 4,
             "eventtype": 13,
             "m_owner": "17553e9a-be22-404d-a7d3-c60ffa8340f9"
+        },
+        {
+            "id": "2ebf35ea-8573-47ea-835e-ec222079d770",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": true,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "17553e9a-be22-404d-a7d3-c60ffa8340f9"
+        },
+        {
+            "id": "86119d4f-51b4-4579-8b36-bf2b303681f6",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": true,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 1,
+            "eventtype": 13,
+            "m_owner": "17553e9a-be22-404d-a7d3-c60ffa8340f9"
+        },
+        {
+            "id": "4f305264-fb57-4098-b4b6-48c424a55e94",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": true,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 1,
+            "eventtype": 2,
+            "m_owner": "17553e9a-be22-404d-a7d3-c60ffa8340f9"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -82,7 +112,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1",
+            "value": ".05",
             "varName": "spawn_rate",
             "varType": 0
         },
@@ -98,6 +128,62 @@
             "resourceFilter": 1023,
             "value": "noone",
             "varName": "drag_target",
+            "varType": 0
+        },
+        {
+            "id": "9c50c86c-4f39-4584-bd5d-350741598d8e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "spin_rate",
+            "varType": 0
+        },
+        {
+            "id": "23d89965-db09-40a2-a116-2e5a53cfe1a1",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "5",
+            "varName": "slots_total",
+            "varType": 1
+        },
+        {
+            "id": "3ef960f4-0696-4302-b44b-aff5342265e9",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "slots_total",
+            "varName": "slots_open",
+            "varType": 1
+        },
+        {
+            "id": "35ea69cd-c5dc-4004-90f8-8128edff6aa4",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": ".1",
+            "varName": "growth_rate",
             "varType": 0
         }
     ],

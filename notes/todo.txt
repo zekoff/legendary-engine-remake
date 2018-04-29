@@ -1,9 +1,12 @@
 TODO
 [x] Make ships face the direction they're moving
 [ ] Spawn ships at center of planet and have them move out into orbit
-[ ] Add zoom and camera control
+[x] Add zoom and camera control
 [x] Add layer interface
 [x] Add feature to drag between planets
 [ ] Verify that you can't create a starlane with the same planet as start/end point
 [ ] Make ship travel time based on speed/distance, not a fixed frame count
-[ ] GUI button target area doesn't work when GUI space != room space
+[x] GUI button target area doesn't work when GUI space != room space
+[ ] Add economy (planets have citizens and generate money)
+[ ] Add building/upgrade options for planets
+[ ] Add competition/enemies
