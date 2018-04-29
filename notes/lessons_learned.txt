@@ -10,3 +10,9 @@ input box still exists at its world coordinates. So if you change the camera suc
 cameraX or cameraY coordinates no longer match world x/y coordinates, a click on the object's
 visual in the GUI won't register as a click on the object in the room. So it's just so easy
 to just draw objects on the GUI and have clickable GUI elements.
+
+If you click the screen, it will transfer the click event not only to the object on top of
+the display list when you click (i.e. what you think you clicked) but also to everything
+that might be under it in the display list. So if two objects are stacked on top of each
+other, and you click the top one (even if it's the only one you can see), both objects will
+run their click events.

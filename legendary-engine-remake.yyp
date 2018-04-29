@@ -255,14 +255,6 @@
             }
         },
         {
-            "Key": "1747d1a5-c2e1-4fbe-9595-72f4c8a9934f",
-            "Value": {
-                "id": "d05db567-898d-4c32-994e-8da73eb9d00d",
-                "resourcePath": "objects\\obj_zoom_manager\\obj_zoom_manager.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "17553e9a-be22-404d-a7d3-c60ffa8340f9",
             "Value": {
                 "id": "44d9c2b9-e8eb-449c-9eb8-3518ba9060d9",
@@ -764,6 +756,14 @@
                 "id": "73e9e9bc-a0a1-495a-819e-7c501b64e36f",
                 "resourcePath": "scripts\\EaseInBack\\EaseInBack.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "52cab713-6f76-4492-9cab-7d43d6bc22b4",
+            "Value": {
+                "id": "00153e9b-9310-4f7f-8f04-3bc85a51371a",
+                "resourcePath": "objects\\TEST_obj\\TEST_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1572,6 +1572,14 @@
                 "id": "f28d4673-692b-46a2-967f-0937819ec7c0",
                 "resourcePath": "scripts\\TGMS_TweensExecute\\TGMS_TweensExecute.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b1641745-acea-4fa6-bd13-d32185b28b32",
+            "Value": {
+                "id": "8b6fe51f-8254-4bc5-8dfe-340749c0e96b",
+                "resourcePath": "rooms\\TEST_room\\TEST_room.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
