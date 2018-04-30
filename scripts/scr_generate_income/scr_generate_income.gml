@@ -10,18 +10,17 @@ var _planet_id = id;
 /// @DnDHash : 3D5053EC
 /// @DnDApplyTo : 0cbcf041-ac49-4c86-a507-b19340c76ea2
 with(obj_ship_green) {
-	/// @DnDAction : YoYo Games.Common.If_Variable
+	/// @DnDAction : YoYo Games.Common.If_Expression
 	/// @DnDVersion : 1
-	/// @DnDHash : 737A6775
+	/// @DnDHash : 15371B32
 	/// @DnDParent : 3D5053EC
-	/// @DnDArgument : "var" "orbiting"
-	/// @DnDArgument : "value" "_planet_id"
-	if(orbiting == _planet_id)
+	/// @DnDArgument : "expr" "orbiting==_planet_id && owner=="player""
+	if(orbiting==_planet_id && owner=="player")
 	{
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 12D4E784
-		/// @DnDParent : 737A6775
+		/// @DnDParent : 15371B32
 		/// @DnDArgument : "expr" ".01"
 		/// @DnDArgument : "expr_relative" "1"
 		/// @DnDArgument : "var" "obj_empire_manager.money"

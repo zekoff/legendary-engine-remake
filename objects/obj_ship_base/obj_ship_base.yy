@@ -111,6 +111,20 @@
             "value": "0",
             "varName": "orbit_angle_deg",
             "varType": 0
+        },
+        {
+            "id": "dcd8cf6a-ede8-4226-a0a5-1d4f74225070",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "noone",
+            "varName": "owner",
+            "varType": 2
         }
     ],
     "solid": false,

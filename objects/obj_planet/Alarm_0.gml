@@ -1,3 +1,9 @@
+/// @DnDAction : YoYo Games.Common.Execute_Code
+/// @DnDVersion : 1
+/// @DnDHash : 5700C0CA
+/// @DnDArgument : "code" "/// @description Spawn military ship"
+/// @description Spawn military ship
+
 /// @DnDAction : YoYo Games.Instances.Set_Alarm
 /// @DnDVersion : 1
 /// @DnDHash : 375E9931
@@ -13,6 +19,13 @@ alarm_set(0, 60/spawn_rate);
 /// @DnDArgument : "objectid" "obj_ship_red"
 /// @DnDSaveInfo : "objectid" "7cbd185a-39ea-42b8-b84e-78d91651bf52"
 _new_ship = instance_create_layer(x + 0, y + 0, "Instances", obj_ship_red);
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 6648FE35
+/// @DnDArgument : "expr" "owner"
+/// @DnDArgument : "var" "_new_ship.owner"
+_new_ship.owner = owner;
 
 /// @DnDAction : YoYo Games.Common.Execute_Script
 /// @DnDVersion : 1.1
