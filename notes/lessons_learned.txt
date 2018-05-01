@@ -16,3 +16,7 @@ the display list when you click (i.e. what you think you clicked) but also to ev
 that might be under it in the display list. So if two objects are stacked on top of each
 other, and you click the top one (even if it's the only one you can see), both objects will
 run their click events.
+
+Renaming resources in the resource tree will change child/parent relationships and other 
+things managed by the IDE, but will not change everything. For instance, if you have an
+object reference that you're using to dot-access a variable in code, that won't be fixed.

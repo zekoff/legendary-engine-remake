@@ -935,6 +935,14 @@
             }
         },
         {
+            "Key": "5e08b40a-5977-4e57-8a63-86f59db3b426",
+            "Value": {
+                "id": "e8afcc15-4252-4a09-9ecd-ece1dd4b7365",
+                "resourcePath": "sprites\\spr_city\\spr_city.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5f65a617-dce3-45c8-bd4a-7c70fc0529d8",
             "Value": {
                 "id": "0ed877d1-6e58-4567-b105-4ef3e9067098",
@@ -1138,7 +1146,7 @@
             "Key": "72f41c70-27d9-4954-836d-0981f2b85cd3",
             "Value": {
                 "id": "f7c4c041-9e12-4a96-80a0-8bfdd33c90ec",
-                "resourcePath": "objects\\obj_base\\obj_base.yy",
+                "resourcePath": "objects\\obj_bldg_base\\obj_bldg_base.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -2167,11 +2175,27 @@
             }
         },
         {
+            "Key": "f1855cf5-64f8-48cc-aa12-cb6b98ccadd8",
+            "Value": {
+                "id": "4e28b400-e465-4de0-a19e-bf0eb5296257",
+                "resourcePath": "objects\\obj_city\\obj_city.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f32b23f2-319b-4fe6-94e2-a638da55bba4",
             "Value": {
                 "id": "3628b3b3-509e-4817-ab52-1c4dea5fde1c",
                 "resourcePath": "scripts\\EaseInCirc\\EaseInCirc.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f360f00b-5c47-400a-82ad-53ec370be93f",
+            "Value": {
+                "id": "bc4de966-b4e3-4daf-a9a8-3d8ff2d5ebf5",
+                "resourcePath": "objects\\obj_waypoint_marker\\obj_waypoint_marker.yy",
+                "resourceType": "GMObject"
             }
         },
         {

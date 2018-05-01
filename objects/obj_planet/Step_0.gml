@@ -86,7 +86,7 @@ var _planet_id = id;
 /// @DnDVersion : 1
 /// @DnDHash : 030A6BD9
 /// @DnDApplyTo : 72f41c70-27d9-4954-836d-0981f2b85cd3
-with(obj_base) {
+with(obj_bldg_base) {
 	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 4701342B

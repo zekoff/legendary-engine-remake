@@ -138,7 +138,33 @@ if(owner == "player")
 				/// @DnDParent : 0AC44EAB
 				/// @DnDArgument : "const" ""culture""
 				case "culture":
+					/// @DnDAction : YoYo Games.Instances.Create_Instance
+					/// @DnDVersion : 1
+					/// @DnDHash : 229E4E0B
+					/// @DnDParent : 6855050D
+					/// @DnDArgument : "xpos_relative" "1"
+					/// @DnDArgument : "ypos_relative" "1"
+					/// @DnDArgument : "var" "_bldg"
+					/// @DnDArgument : "var_temp" "1"
+					/// @DnDArgument : "objectid" "obj_city"
+					/// @DnDSaveInfo : "objectid" "f1855cf5-64f8-48cc-aa12-cb6b98ccadd8"
+					var _bldg = instance_create_layer(x + 0, y + 0, "Instances", obj_city);
 				
+					/// @DnDAction : YoYo Games.Common.Variable
+					/// @DnDVersion : 1
+					/// @DnDHash : 247B4B98
+					/// @DnDParent : 6855050D
+					/// @DnDArgument : "expr" "id"
+					/// @DnDArgument : "var" "_bldg.on_planet"
+					_bldg.on_planet = id;
+				
+					/// @DnDAction : YoYo Games.Common.Variable
+					/// @DnDVersion : 1
+					/// @DnDHash : 78A5FD23
+					/// @DnDParent : 6855050D
+					/// @DnDArgument : "expr" "360 / slots_total * slots_open + image_angle"
+					/// @DnDArgument : "var" "_bldg.image_angle"
+					_bldg.image_angle = 360 / slots_total * slots_open + image_angle;
 					break;
 			}
 		}

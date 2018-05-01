@@ -7,6 +7,23 @@ TODO
 [ ] Verify that you can't create a starlane with the same planet as start/end point
 [ ] Make ship travel time based on speed/distance, not a fixed frame count
 [x] GUI button target area doesn't work when GUI space != room space
-[ ] Add economy (planets have citizens and generate money)
-[ ] Add building/upgrade options for planets
-[ ] Add competition/enemies
+[x] Add economy (planets have citizens and generate money)
+[x] Add building/upgrade options for planets
+[x] Add competition/enemies
+[ ] Add AI (enemy ships spawn in waves, and attempt to take over planets too)
+[ ] Add waypoint system
+[ ] Fade ships and things in/out when switching visual layers in UI
+[ ] Implement supplies
+	[ ] Change from farms to factories
+	[ ] Track supplies per planet
+	[ ] Supply ships move supplies between planets
+[ ] Implement culture/citizens
+	[ ] Per-planet culture/allegiance value
+	[ ] Starlanes modify cultural value
+	[ ] Culture/allegiance visible in UI (circles around planets?)
+	[ ] Planets get captured based on culture
+[ ] Military conflict destroys culture/allegiance
+[ ] Implement starbases/constructions
+[ ] Switch away from tween-based movement
+	[ ] Add speed factor to all ships
+	[ ] Create paths dynamically between planets
