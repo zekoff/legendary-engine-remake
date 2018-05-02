@@ -36,12 +36,59 @@ if ((l5981DD1F_0 > 0))
 			/// @DnDVersion : 1.1
 			/// @DnDHash : 7A596548
 			/// @DnDInput : 2
+			/// @DnDDisabled : 1
 			/// @DnDParent : 41A70B47
 			/// @DnDArgument : "script" "scr_send_fleet"
 			/// @DnDArgument : "arg" "_source_planet_id"
 			/// @DnDArgument : "arg_1" "_target_planet_id"
 			/// @DnDSaveInfo : "script" "9cca30e9-9b64-4319-b331-623fe7c00adb"
-			script_execute(scr_send_fleet, _source_planet_id, _target_planet_id);
+		
+		
+			/// @DnDAction : YoYo Games.Common.Execute_Script
+			/// @DnDVersion : 1.1
+			/// @DnDHash : 3C867774
+			/// @DnDInput : 2
+			/// @DnDParent : 41A70B47
+			/// @DnDArgument : "var" "_starlane"
+			/// @DnDArgument : "var_temp" "1"
+			/// @DnDArgument : "script" "scr_check_connected"
+			/// @DnDArgument : "arg" "_source_planet_id"
+			/// @DnDArgument : "arg_1" "_target_planet_id"
+			/// @DnDSaveInfo : "script" "2f912e45-02ae-409f-8e61-16adb589cc7c"
+			var _starlane = script_execute(scr_check_connected, _source_planet_id, _target_planet_id);
+		
+			/// @DnDAction : YoYo Games.Common.If_Expression
+			/// @DnDVersion : 1
+			/// @DnDHash : 7D87EC41
+			/// @DnDParent : 41A70B47
+			/// @DnDArgument : "expr" "!_starlane && _source_planet_id.owner=="player" && _target_planet_id.owner=="player""
+			if(!_starlane && _source_planet_id.owner=="player" && _target_planet_id.owner=="player")
+			{
+				/// @DnDAction : YoYo Games.Common.Execute_Script
+				/// @DnDVersion : 1.1
+				/// @DnDHash : 52E5F59C
+				/// @DnDInput : 2
+				/// @DnDParent : 7D87EC41
+				/// @DnDArgument : "script" "scr_create_military_waypoint"
+				/// @DnDArgument : "arg" "_source_planet_id"
+				/// @DnDArgument : "arg_1" "_target_planet_id"
+				/// @DnDSaveInfo : "script" "f685dbfc-27ce-4819-ba03-5875962b6aae"
+				script_execute(scr_create_military_waypoint, _source_planet_id, _target_planet_id);
+			}
+		
+			/// @DnDAction : YoYo Games.Common.Else
+			/// @DnDVersion : 1
+			/// @DnDHash : 7AE5A986
+			/// @DnDParent : 41A70B47
+			else
+			{
+				/// @DnDAction : YoYo Games.Instances.Destroy_Instance
+				/// @DnDVersion : 1
+				/// @DnDHash : 36C9DBCE
+				/// @DnDApplyTo : _starlane
+				/// @DnDParent : 7AE5A986
+				with(_starlane) instance_destroy();
+			}
 			break;
 	
 		/// @DnDAction : YoYo Games.Switch.Case

@@ -551,6 +551,14 @@
             }
         },
         {
+            "Key": "39ce4bf3-70c8-4daf-a005-1e1c29917269",
+            "Value": {
+                "id": "da3e610c-c96a-4e81-b5a6-7b52cd4501a5",
+                "resourcePath": "objects\\obj_connection_base\\obj_connection_base.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3a4b4928-d311-42f2-8634-f96fd0c48265",
             "Value": {
                 "id": "83930a81-b596-4603-911d-a678040f1289",
@@ -979,6 +987,14 @@
             "Value": {
                 "id": "40c2bb38-a708-415b-9a2f-67847934f101",
                 "resourcePath": "views\\61e0aabd-5433-4fb5-9956-899c1d7096d5.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "62678426-b370-41ed-abb7-5840fed59c5b",
+            "Value": {
+                "id": "520fc569-b1ff-410b-b5fb-8f2497b287c9",
+                "resourcePath": "views\\62678426-b370-41ed-abb7-5840fed59c5b.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -2194,7 +2210,7 @@
             "Key": "f360f00b-5c47-400a-82ad-53ec370be93f",
             "Value": {
                 "id": "bc4de966-b4e3-4daf-a9a8-3d8ff2d5ebf5",
-                "resourcePath": "objects\\obj_waypoint_marker\\obj_waypoint_marker.yy",
+                "resourcePath": "objects\\obj_waypoint\\obj_waypoint.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -2247,6 +2263,14 @@
             }
         },
         {
+            "Key": "f685dbfc-27ce-4819-ba03-5875962b6aae",
+            "Value": {
+                "id": "b22fc0b9-8693-483a-a007-97fc5fdb08ce",
+                "resourcePath": "scripts\\scr_create_military_waypoint\\scr_create_military_waypoint.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f72a2ae9-6618-4d2d-a101-17821bd98b07",
             "Value": {
                 "id": "384cb275-ca20-4afc-a940-f9737b3bd64f",
@@ -2259,6 +2283,14 @@
             "Value": {
                 "id": "9b12c997-f685-4001-9234-3d60709c4d8b",
                 "resourcePath": "views\\f737ecf0-83de-4cf7-ba49-2b7d4d18ae60.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "fa384c09-7cc1-4d39-ac69-6a3e2d3c85ef",
+            "Value": {
+                "id": "8d317505-a3ab-479b-8681-7117ad0e2b90",
+                "resourcePath": "views\\fa384c09-7cc1-4d39-ac69-6a3e2d3c85ef.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -2322,7 +2354,7 @@
             "Key": "fc99a1bc-4a2c-444b-aec4-f5aff2aa0ca3",
             "Value": {
                 "id": "5c9c82fb-e7cb-4fef-9bd2-569b17e14a06",
-                "resourcePath": "scripts\\scr_init_starlane\\scr_init_starlane.yy",
+                "resourcePath": "scripts\\scr_init_connection\\scr_init_connection.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2516,6 +2548,7 @@
         "2f912e45-02ae-409f-8e61-16adb589cc7c",
         "9cca30e9-9b64-4319-b331-623fe7c00adb",
         "b5211b21-fedf-49f1-802d-f4e7c937679a",
+        "f685dbfc-27ce-4819-ba03-5875962b6aae",
         "84107854-0742-4553-b218-6f4d69c094ed",
         "55f26e90-9ee4-42ab-93c8-32da757b7d1f",
         "71a2307e-31bb-4692-8b8f-de9b1a112a20",

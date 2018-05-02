@@ -2,7 +2,7 @@
     "id": "f360f00b-5c47-400a-82ad-53ec370be93f",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_waypoint_marker",
+    "name": "obj_waypoint",
     "eventList": [
         {
             "id": "a7602ce8-ad75-4d28-b7b6-ffe4ffa17035",
@@ -17,7 +17,7 @@
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "39ce4bf3-70c8-4daf-a005-1e1c29917269",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

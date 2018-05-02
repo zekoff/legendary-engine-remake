@@ -15,9 +15,9 @@ var _target_planet_id = argument1;
 /// @DnDArgument : "xpos_relative" "1"
 /// @DnDArgument : "ypos_relative" "1"
 /// @DnDArgument : "var" "_starlane"
-/// @DnDArgument : "objectid" "obj_starlane"
-/// @DnDSaveInfo : "objectid" "03a98290-cf1a-4e4a-892a-5ab6a138c3f2"
-_starlane = instance_create_layer(x + 0, y + 0, "Instances", obj_starlane);
+/// @DnDArgument : "objectid" "obj_waypoint"
+/// @DnDSaveInfo : "objectid" "f360f00b-5c47-400a-82ad-53ec370be93f"
+_starlane = instance_create_layer(x + 0, y + 0, "Instances", obj_waypoint);
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
@@ -42,4 +42,14 @@ point_end = _target_planet_id;
 /// @DnDSaveInfo : "script" "fc99a1bc-4a2c-444b-aec4-f5aff2aa0ca3"
 with(_starlane) {
 	script_execute(scr_init_connection);
+}
+
+/// @DnDAction : YoYo Games.Instances.Color_Sprite
+/// @DnDVersion : 1
+/// @DnDHash : 042ADBF1
+/// @DnDApplyTo : _starlane
+/// @DnDArgument : "colour" "$FF0000FF"
+with(_starlane) {
+image_blend = $FF0000FF & $ffffff;
+image_alpha = ($FF0000FF >> 24) / $ff;
 }

@@ -8,7 +8,7 @@
         "2f912e45-02ae-409f-8e61-16adb589cc7c"
     ],
     "filterType": "GMScript",
-    "folderName": "starlanes",
+    "folderName": "connections",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

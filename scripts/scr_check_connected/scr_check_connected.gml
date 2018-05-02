@@ -18,8 +18,8 @@ var _point2_connected = false;
 /// @DnDAction : YoYo Games.Common.Apply_To
 /// @DnDVersion : 1
 /// @DnDHash : 4507AF55
-/// @DnDApplyTo : 03a98290-cf1a-4e4a-892a-5ab6a138c3f2
-with(obj_starlane) {
+/// @DnDApplyTo : 39ce4bf3-70c8-4daf-a005-1e1c29917269
+with(obj_connection_base) {
 	/// @DnDAction : YoYo Games.Common.If_Expression
 	/// @DnDVersion : 1
 	/// @DnDHash : 528F0F41
