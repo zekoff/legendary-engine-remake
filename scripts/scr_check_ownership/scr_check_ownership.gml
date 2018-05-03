@@ -72,13 +72,6 @@ with(obj_ship_red) {
 			/// @DnDParent : 57E0310D
 			/// @DnDArgument : "const" ""neutral""
 			case "neutral":
-				/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
-				/// @DnDVersion : 1
-				/// @DnDHash : 58E6053A
-				/// @DnDParent : 7D480FC0
-				/// @DnDArgument : "msg" ""enemy ship detected""
-				show_debug_message(string("enemy ship detected"));
-			
 				/// @DnDAction : YoYo Games.Common.Variable
 				/// @DnDVersion : 1
 				/// @DnDHash : 183C3388

@@ -51,3 +51,68 @@ image_blend = _target_color & $ffffff;
 /// @DnDArgument : "expr" "_target_layer"
 /// @DnDArgument : "var" "obj_ui_state.selected_layer"
 obj_ui_state.selected_layer = _target_layer;
+
+/// @DnDAction : YoYo Games.Common.Execute_Code
+/// @DnDVersion : 1
+/// @DnDHash : 0B148C81
+/// @DnDArgument : "code" "var _arr;$(13_10)var _temp;$(13_10)_arr = layer_get_all_elements("Starlanes");$(13_10)for (var i = 0; i < array_length_1d(_arr); i++) {$(13_10)	_temp = layer_instance_get_instance(_arr[i]);$(13_10)	_temp.image_alpha = 0.3;$(13_10)}$(13_10)_arr = layer_get_all_elements("MilitaryConnections");$(13_10)for (var i = 0; i < array_length_1d(_arr); i++) {$(13_10)	_temp = layer_instance_get_instance(_arr[i]);$(13_10)	_temp.image_alpha = 0.3;$(13_10)}"
+var _arr;
+var _temp;
+_arr = layer_get_all_elements("Starlanes");
+for (var i = 0; i < array_length_1d(_arr); i++) {
+	_temp = layer_instance_get_instance(_arr[i]);
+	_temp.image_alpha = 0.3;
+}
+_arr = layer_get_all_elements("MilitaryConnections");
+for (var i = 0; i < array_length_1d(_arr); i++) {
+	_temp = layer_instance_get_instance(_arr[i]);
+	_temp.image_alpha = 0.3;
+}
+
+/// @DnDAction : YoYo Games.Switch.Switch
+/// @DnDVersion : 1
+/// @DnDHash : 26FF35E9
+/// @DnDArgument : "expr" "obj_ui_state.selected_layer"
+var l26FF35E9_0 = obj_ui_state.selected_layer;
+switch(l26FF35E9_0)
+{
+	/// @DnDAction : YoYo Games.Switch.Case
+	/// @DnDVersion : 1
+	/// @DnDHash : 5ACFAC36
+	/// @DnDParent : 26FF35E9
+	/// @DnDArgument : "const" ""military""
+	case "military":
+		/// @DnDAction : YoYo Games.Common.Execute_Code
+		/// @DnDVersion : 1
+		/// @DnDHash : 156E87E8
+		/// @DnDParent : 5ACFAC36
+		/// @DnDArgument : "code" "var _arr;$(13_10)var _temp;$(13_10)_arr = layer_get_all_elements("MilitaryConnections");$(13_10)for (var i = 0; i < array_length_1d(_arr); i++) {$(13_10)	_temp = layer_instance_get_instance(_arr[i]);$(13_10)	_temp.image_alpha = 1;$(13_10)}"
+		var _arr;
+		var _temp;
+		_arr = layer_get_all_elements("MilitaryConnections");
+		for (var i = 0; i < array_length_1d(_arr); i++) {
+			_temp = layer_instance_get_instance(_arr[i]);
+			_temp.image_alpha = 1;
+		}
+		break;
+
+	/// @DnDAction : YoYo Games.Switch.Case
+	/// @DnDVersion : 1
+	/// @DnDHash : 61B84EB0
+	/// @DnDParent : 26FF35E9
+	/// @DnDArgument : "const" ""culture""
+	case "culture":
+		/// @DnDAction : YoYo Games.Common.Execute_Code
+		/// @DnDVersion : 1
+		/// @DnDHash : 315EA6B9
+		/// @DnDParent : 61B84EB0
+		/// @DnDArgument : "code" "var _arr;$(13_10)var _temp;$(13_10)_arr = layer_get_all_elements("Starlanes");$(13_10)for (var i = 0; i < array_length_1d(_arr); i++) {$(13_10)	_temp = layer_instance_get_instance(_arr[i]);$(13_10)	_temp.image_alpha = 1;$(13_10)}"
+		var _arr;
+		var _temp;
+		_arr = layer_get_all_elements("Starlanes");
+		for (var i = 0; i < array_length_1d(_arr); i++) {
+			_temp = layer_instance_get_instance(_arr[i]);
+			_temp.image_alpha = 1;
+		}
+		break;
+}

@@ -61,8 +61,8 @@ if ((l5981DD1F_0 > 0))
 			/// @DnDVersion : 1
 			/// @DnDHash : 7D87EC41
 			/// @DnDParent : 41A70B47
-			/// @DnDArgument : "expr" "!_starlane && _source_planet_id.owner=="player" && _target_planet_id.owner=="player""
-			if(!_starlane && _source_planet_id.owner=="player" && _target_planet_id.owner=="player")
+			/// @DnDArgument : "expr" "!_starlane && _source_planet_id.owner=="player""
+			if(!_starlane && _source_planet_id.owner=="player")
 			{
 				/// @DnDAction : YoYo Games.Common.Execute_Script
 				/// @DnDVersion : 1.1

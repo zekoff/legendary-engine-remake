@@ -2,7 +2,7 @@
 {
     "name": "room0",
     "id": "6f578f88-517d-4fc2-b715-d7e310555349",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,
@@ -28,7 +28,7 @@
         "c9ce629e-95be-418e-987f-82e7cb4dfd0e",
         "14595c99-0090-4576-a849-cb5bc4218a42"
     ],
-    "IsDnD": true,
+    "IsDnD": false,
     "layers": [
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
@@ -116,7 +116,58 @@
 {"name": "inst_747ABAAD","id": "95a8e85b-c901-4a6f-ab5d-dcd99108b4e3","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": true,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_747ABAAD","objId": "17553e9a-be22-404d-a7d3-c60ffa8340f9","properties": [{"id": "c6041b88-507f-483d-bda1-b30f527888e9","modelName": "GMOverriddenProperty","objectId": "17553e9a-be22-404d-a7d3-c60ffa8340f9","propertyId": "685acebc-1901-43ea-bb6d-9c5425180215","mvc": "1.0","value": "\"player\""}],"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 137,"y": 110}
             ],
             "layers": [
+                {
+                    "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+                    "name": "Starlanes",
+                    "id": "740012a2-4cc5-45e5-9693-bcf2a451895d",
+                    "depth": 300,
+                    "grid_x": 24,
+                    "grid_y": 24,
+                    "hierarchyFrozen": false,
+                    "hierarchyVisible": true,
+                    "inheritLayerDepth": false,
+                    "inheritLayerSettings": false,
+                    "inheritSubLayers": false,
+                    "inheritVisibility": false,
+                    "instances": [
 
+                    ],
+                    "layers": [
+
+                    ],
+                    "m_parentID": "00000000-0000-0000-0000-000000000000",
+                    "m_serialiseFrozen": false,
+                    "modelName": "GMRInstanceLayer",
+                    "mvc": "1.0",
+                    "userdefined_depth": false,
+                    "visible": true
+                },
+                {
+                    "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+                    "name": "MilitaryConnections",
+                    "id": "acf69773-8822-4ef4-bae0-8585bf68b9d0",
+                    "depth": 400,
+                    "grid_x": 24,
+                    "grid_y": 24,
+                    "hierarchyFrozen": false,
+                    "hierarchyVisible": true,
+                    "inheritLayerDepth": false,
+                    "inheritLayerSettings": false,
+                    "inheritSubLayers": false,
+                    "inheritVisibility": false,
+                    "instances": [
+
+                    ],
+                    "layers": [
+
+                    ],
+                    "m_parentID": "00000000-0000-0000-0000-000000000000",
+                    "m_serialiseFrozen": false,
+                    "modelName": "GMRInstanceLayer",
+                    "mvc": "1.0",
+                    "userdefined_depth": false,
+                    "visible": true
+                }
             ],
             "m_parentID": "00000000-0000-0000-0000-000000000000",
             "m_serialiseFrozen": false,
@@ -132,7 +183,7 @@
             "animationFPS": 15,
             "animationSpeedType": "0",
             "colour": { "Value": 4278190080 },
-            "depth": 300,
+            "depth": 500,
             "grid_x": 24,
             "grid_y": 24,
             "hierarchyFrozen": false,

@@ -13,6 +13,16 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "f360f00b-5c47-400a-82ad-53ec370be93f"
+        },
+        {
+            "id": "c983f040-d8f9-420a-a8c0-e0ef7587eff7",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": true,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 2,
+            "m_owner": "f360f00b-5c47-400a-82ad-53ec370be93f"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -31,7 +41,22 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "1ebcf247-b356-48bd-993a-46a2deefa4fe",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": true,
+            "rangeMax": 300,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "32.6",
+            "varName": "waypoint_timer",
+            "varType": 0
+        }
+    ],
     "solid": false,
     "spriteId": "9c7d7f10-eab3-434e-90d8-4dc8a1b140e5",
     "visible": true

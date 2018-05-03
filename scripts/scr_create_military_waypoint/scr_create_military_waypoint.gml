@@ -16,8 +16,9 @@ var _target_planet_id = argument1;
 /// @DnDArgument : "ypos_relative" "1"
 /// @DnDArgument : "var" "_starlane"
 /// @DnDArgument : "objectid" "obj_waypoint"
+/// @DnDArgument : "layer" ""MilitaryConnections""
 /// @DnDSaveInfo : "objectid" "f360f00b-5c47-400a-82ad-53ec370be93f"
-_starlane = instance_create_layer(x + 0, y + 0, "Instances", obj_waypoint);
+_starlane = instance_create_layer(x + 0, y + 0, "MilitaryConnections", obj_waypoint);
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1

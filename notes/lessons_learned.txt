@@ -20,3 +20,13 @@ run their click events.
 Renaming resources in the resource tree will change child/parent relationships and other 
 things managed by the IDE, but will not change everything. For instance, if you have an
 object reference that you're using to dot-access a variable in code, that won't be fixed.
+
+Regarding the point above, don't use dot-accesors on objects if using DnD. Just make the
+thing relative to the object you're interested in where possible, because it will allow
+the rename refactoring to work better.
+
+A layer element is not the same as an instance. Layer elements returned from the various
+layer functions must be converted to instances before being used as such.
+
+The other keyword, when used inside a "with" block, refers to the calling context. So no
+more setting up temp variables to hold the id of an instance before calling with inside it.
