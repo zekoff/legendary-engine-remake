@@ -34,3 +34,7 @@ more setting up temp variables to hold the id of an instance before calling with
 Programatically-created paths default to closed. Path node speed factor is calibrated for
 a value of 100 (i.e. the path_speed will move that number of pixels per step if path nodes
 have a speed factor of 100).
+
+Apparently you can't be quite so generous as JS when forcing expressions to true/false.
+Trying to use the existance of something as a true in an if statement doesn't seem to work,
+at least not always.

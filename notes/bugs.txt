@@ -1,0 +1,2 @@
+[ ] Starlanes don't always work to accelerate ships
+[ ] Double-clicking a planet with no layer selected still costs you a build slot

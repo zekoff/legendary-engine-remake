@@ -64,6 +64,20 @@ switch(l683E5C1E_0)
 /// @DnDSaveInfo : "script" "71a2307e-31bb-4692-8b8f-de9b1a112a20"
 script_execute(scr_generate_income);
 
+/// @DnDAction : YoYo Games.Common.Execute_Script
+/// @DnDVersion : 1.1
+/// @DnDHash : 4E229DBF
+/// @DnDArgument : "script" "scr_manage_citizens"
+/// @DnDSaveInfo : "script" "b4ab9fc4-4828-49ec-a92e-24022ad64a36"
+script_execute(scr_manage_citizens);
+
+/// @DnDAction : YoYo Games.Common.Execute_Script
+/// @DnDVersion : 1.1
+/// @DnDHash : 0B14AC6E
+/// @DnDArgument : "script" "scr_manage_influence"
+/// @DnDSaveInfo : "script" "bd44861e-8945-4f0a-b122-2a74ac9a9e7c"
+script_execute(scr_manage_influence);
+
 /// @DnDAction : YoYo Games.Instances.Sprite_Rotate
 /// @DnDVersion : 1
 /// @DnDHash : 144958CE

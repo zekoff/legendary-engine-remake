@@ -93,6 +93,16 @@
             "enumb": 3,
             "eventtype": 2,
             "m_owner": "17553e9a-be22-404d-a7d3-c60ffa8340f9"
+        },
+        {
+            "id": "7dde5193-0259-46e5-a59d-282399688ba3",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": true,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 13,
+            "m_owner": "17553e9a-be22-404d-a7d3-c60ffa8340f9"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -209,6 +219,48 @@
             "value": "\"neutral\"",
             "varName": "owner",
             "varType": 2
+        },
+        {
+            "id": "a4beef19-262b-44be-8a64-e6061dc46a06",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "20",
+            "varName": "citizens",
+            "varType": 0
+        },
+        {
+            "id": "65cf3cf5-3343-41d9-b9e8-3031ef279be3",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "influence",
+            "varType": 0
+        },
+        {
+            "id": "a8476fca-6560-460a-8a7f-1b8531995254",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "noone",
+            "varName": "influence_aura",
+            "varType": 0
         }
     ],
     "solid": false,

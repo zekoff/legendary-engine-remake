@@ -26,7 +26,8 @@
         "d68ee814-ec2b-4ccb-9260-b25418618a33",
         "a21e8f4a-19ba-4c2e-bcb7-9c53d1163045",
         "c9ce629e-95be-418e-987f-82e7cb4dfd0e",
-        "14595c99-0090-4576-a849-cb5bc4218a42"
+        "14595c99-0090-4576-a849-cb5bc4218a42",
+        "deab9cee-d315-4b6b-a9b5-1f5b4266ae96"
     ],
     "IsDnD": false,
     "layers": [
@@ -177,13 +178,39 @@
             "visible": true
         },
         {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "Influence",
+            "id": "dd4a2c7c-30d5-436e-b377-d7024c7ea708",
+            "depth": 500,
+            "grid_x": 24,
+            "grid_y": 24,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "instances": [
+{"name": "inst_71812957","id": "deab9cee-d315-4b6b-a9b5-1f5b4266ae96","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": true,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_71812957","objId": "b5c2917b-cc19-466b-8ec7-8fc3eda9f40e","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 264,"y": 456}
+            ],
+            "layers": [
+
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "userdefined_depth": false,
+            "visible": true
+        },
+        {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Background",
             "id": "3a3a9e85-ff20-40cc-8baf-c5fbdcc49689",
             "animationFPS": 15,
             "animationSpeedType": "0",
             "colour": { "Value": 4278190080 },
-            "depth": 500,
+            "depth": 600,
             "grid_x": 24,
             "grid_y": 24,
             "hierarchyFrozen": false,

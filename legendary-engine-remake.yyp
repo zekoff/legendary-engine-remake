@@ -975,6 +975,14 @@
             }
         },
         {
+            "Key": "611c9346-5f9c-4aff-aa31-114db019081c",
+            "Value": {
+                "id": "b9dbf3bb-75f3-46fe-afb2-a2b6bc79bd27",
+                "resourcePath": "shaders\\shd_influence\\shd_influence.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "6155fe62-14a6-46df-8aab-0c9affc1c74e",
             "Value": {
                 "id": "688e6d83-40b8-46a3-97f3-b10d34a368b7",
@@ -1431,6 +1439,14 @@
             }
         },
         {
+            "Key": "8f29fde1-6d78-4273-a33c-10ee264e9759",
+            "Value": {
+                "id": "4b853868-2485-4163-95a0-905ec1be5bed",
+                "resourcePath": "objects\\obj_influence_aura\\obj_influence_aura.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "91304b6d-a228-42b0-bd20-e30ce93997bf",
             "Value": {
                 "id": "c33b7769-3ec5-4032-b17e-89ed9fbdcde0",
@@ -1703,6 +1719,14 @@
             }
         },
         {
+            "Key": "b4ab9fc4-4828-49ec-a92e-24022ad64a36",
+            "Value": {
+                "id": "4d333d61-f103-4e4a-9b97-71a28205c66e",
+                "resourcePath": "scripts\\scr_manage_citizens\\scr_manage_citizens.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b4f173c3-4e8f-4860-b061-ef6472a12511",
             "Value": {
                 "id": "34c31da9-e193-4c02-b5d2-e9b2d816e737",
@@ -1716,6 +1740,14 @@
                 "id": "e2dae16e-c5f6-497b-aed1-99e2487d1232",
                 "resourcePath": "scripts\\scr_create_starlane\\scr_create_starlane.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b5c2917b-cc19-466b-8ec7-8fc3eda9f40e",
+            "Value": {
+                "id": "20a86038-007b-4fe4-99eb-eeb7273f9963",
+                "resourcePath": "objects\\obj_influence_aura_painter\\obj_influence_aura_painter.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1791,6 +1823,14 @@
             }
         },
         {
+            "Key": "bd44861e-8945-4f0a-b122-2a74ac9a9e7c",
+            "Value": {
+                "id": "a18df95b-3f12-4caf-8bd3-44c78d947539",
+                "resourcePath": "scripts\\scr_manage_influence\\scr_manage_influence.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "bddaaa43-8e7e-4c0a-9a11-6603eb2ea22e",
             "Value": {
                 "id": "03f308eb-bae5-4326-8833-0ea1e2254183",
@@ -1852,6 +1892,14 @@
                 "id": "4af99a87-d3fa-43a8-bd10-cdc07deeb989",
                 "resourcePath": "scripts\\path_scale__\\path_scale__.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c4ab7a0d-bd71-440a-b004-0cfbcc1e0384",
+            "Value": {
+                "id": "dde56fde-d2a8-4de7-8c55-deb9e75cb6d5",
+                "resourcePath": "notes\\bugs.yy",
+                "resourceType": "GMNotes"
             }
         },
         {
@@ -2557,6 +2605,8 @@
         "9cca30e9-9b64-4319-b331-623fe7c00adb",
         "b5211b21-fedf-49f1-802d-f4e7c937679a",
         "f685dbfc-27ce-4819-ba03-5875962b6aae",
+        "bd44861e-8945-4f0a-b122-2a74ac9a9e7c",
+        "b4ab9fc4-4828-49ec-a92e-24022ad64a36",
         "84107854-0742-4553-b218-6f4d69c094ed",
         "55f26e90-9ee4-42ab-93c8-32da757b7d1f",
         "71a2307e-31bb-4692-8b8f-de9b1a112a20",
