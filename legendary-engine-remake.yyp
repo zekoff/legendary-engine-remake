@@ -1479,6 +1479,14 @@
             }
         },
         {
+            "Key": "9733ff7a-d2da-48f6-934f-5ac3e876f677",
+            "Value": {
+                "id": "2fb3afe2-1afb-44a3-95f2-22e7d63c41ee",
+                "resourcePath": "scripts\\scr_create_traderoute\\scr_create_traderoute.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "98f757bb-7eec-47ee-8f9b-bc174f82a61d",
             "Value": {
                 "id": "e234b854-b4cc-4bb7-995c-f5b59c06f8c5",
@@ -1871,6 +1879,14 @@
             }
         },
         {
+            "Key": "c16b67d1-1299-4b90-93d9-556d1c9a2d36",
+            "Value": {
+                "id": "cfeb73e9-3bf3-4440-aebb-6e662dc815a9",
+                "resourcePath": "objects\\obj_traderoute\\obj_traderoute.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c1758442-2f0d-4cca-9755-69a94207f37e",
             "Value": {
                 "id": "f436c565-82a6-4e9d-9d7a-bb48b3da5cba",
@@ -1972,6 +1988,14 @@
                 "id": "8a976953-7d61-44e8-9186-d7a9bd159951",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "cf9581fb-b430-41fb-a426-a545ffa190f0",
+            "Value": {
+                "id": "9a7f364b-fa52-472f-baac-2d4d00bdd2dd",
+                "resourcePath": "sprites\\spr_traderoute\\spr_traderoute.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2602,9 +2626,10 @@
         "3dc6b96c-0375-4758-baf9-834ada76d6ba",
         "fc99a1bc-4a2c-444b-aec4-f5aff2aa0ca3",
         "2f912e45-02ae-409f-8e61-16adb589cc7c",
-        "9cca30e9-9b64-4319-b331-623fe7c00adb",
         "b5211b21-fedf-49f1-802d-f4e7c937679a",
         "f685dbfc-27ce-4819-ba03-5875962b6aae",
+        "9733ff7a-d2da-48f6-934f-5ac3e876f677",
+        "9cca30e9-9b64-4319-b331-623fe7c00adb",
         "bd44861e-8945-4f0a-b122-2a74ac9a9e7c",
         "b4ab9fc4-4828-49ec-a92e-24022ad64a36",
         "84107854-0742-4553-b218-6f4d69c094ed",

@@ -1,9 +1,3 @@
-/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
-/// @DnDVersion : 1
-/// @DnDHash : 578F10ED
-/// @DnDArgument : "msg" ""Tapped " + string(button_type)"
-show_debug_message(string("Tapped " + string(button_type)));
-
 /// @DnDAction : YoYo Games.Common.Temp_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 2ADBBC96
@@ -55,18 +49,23 @@ obj_ui_state.selected_layer = _target_layer;
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 0B148C81
-/// @DnDArgument : "code" "var _arr;$(13_10)var _temp;$(13_10)_arr = layer_get_all_elements("Starlanes");$(13_10)for (var i = 0; i < array_length_1d(_arr); i++) {$(13_10)	_temp = layer_instance_get_instance(_arr[i]);$(13_10)	_temp.image_alpha = 0.05;$(13_10)}$(13_10)_arr = layer_get_all_elements("MilitaryConnections");$(13_10)for (var i = 0; i < array_length_1d(_arr); i++) {$(13_10)	_temp = layer_instance_get_instance(_arr[i]);$(13_10)	_temp.image_alpha = 0.1;$(13_10)}"
+/// @DnDArgument : "code" "var _arr;$(13_10)var _temp;$(13_10)_arr = layer_get_all_elements("Starlanes");$(13_10)for (var i = 0; i < array_length_1d(_arr); i++) {$(13_10)	_temp = layer_instance_get_instance(_arr[i]);$(13_10)	_temp.image_alpha = 0.2;$(13_10)}$(13_10)_arr = layer_get_all_elements("MilitaryConnections");$(13_10)for (var i = 0; i < array_length_1d(_arr); i++) {$(13_10)	_temp = layer_instance_get_instance(_arr[i]);$(13_10)	_temp.image_alpha = 0.15;$(13_10)}$(13_10)_arr = layer_get_all_elements("Traderoutes");$(13_10)for (var i = 0; i < array_length_1d(_arr); i++) {$(13_10)	_temp = layer_instance_get_instance(_arr[i]);$(13_10)	_temp.image_alpha = 0.15;$(13_10)}"
 var _arr;
 var _temp;
 _arr = layer_get_all_elements("Starlanes");
 for (var i = 0; i < array_length_1d(_arr); i++) {
 	_temp = layer_instance_get_instance(_arr[i]);
-	_temp.image_alpha = 0.05;
+	_temp.image_alpha = 0.2;
 }
 _arr = layer_get_all_elements("MilitaryConnections");
 for (var i = 0; i < array_length_1d(_arr); i++) {
 	_temp = layer_instance_get_instance(_arr[i]);
-	_temp.image_alpha = 0.1;
+	_temp.image_alpha = 0.15;
+}
+_arr = layer_get_all_elements("Traderoutes");
+for (var i = 0; i < array_length_1d(_arr); i++) {
+	_temp = layer_instance_get_instance(_arr[i]);
+	_temp.image_alpha = 0.15;
 }
 
 /// @DnDAction : YoYo Games.Switch.Switch
@@ -78,18 +77,38 @@ switch(l26FF35E9_0)
 {
 	/// @DnDAction : YoYo Games.Switch.Case
 	/// @DnDVersion : 1
-	/// @DnDHash : 5ACFAC36
+	/// @DnDHash : 267693EE
 	/// @DnDParent : 26FF35E9
 	/// @DnDArgument : "const" ""military""
 	case "military":
 		/// @DnDAction : YoYo Games.Common.Execute_Code
 		/// @DnDVersion : 1
-		/// @DnDHash : 156E87E8
-		/// @DnDParent : 5ACFAC36
+		/// @DnDHash : 1C1BFC9B
+		/// @DnDParent : 267693EE
 		/// @DnDArgument : "code" "var _arr;$(13_10)var _temp;$(13_10)_arr = layer_get_all_elements("MilitaryConnections");$(13_10)for (var i = 0; i < array_length_1d(_arr); i++) {$(13_10)	_temp = layer_instance_get_instance(_arr[i]);$(13_10)	_temp.image_alpha = 0.4;$(13_10)}"
 		var _arr;
 		var _temp;
 		_arr = layer_get_all_elements("MilitaryConnections");
+		for (var i = 0; i < array_length_1d(_arr); i++) {
+			_temp = layer_instance_get_instance(_arr[i]);
+			_temp.image_alpha = 0.4;
+		}
+		break;
+
+	/// @DnDAction : YoYo Games.Switch.Case
+	/// @DnDVersion : 1
+	/// @DnDHash : 5ACFAC36
+	/// @DnDParent : 26FF35E9
+	/// @DnDArgument : "const" ""economy""
+	case "economy":
+		/// @DnDAction : YoYo Games.Common.Execute_Code
+		/// @DnDVersion : 1
+		/// @DnDHash : 156E87E8
+		/// @DnDParent : 5ACFAC36
+		/// @DnDArgument : "code" "var _arr;$(13_10)var _temp;$(13_10)_arr = layer_get_all_elements("Traderoutes");$(13_10)for (var i = 0; i < array_length_1d(_arr); i++) {$(13_10)	_temp = layer_instance_get_instance(_arr[i]);$(13_10)	_temp.image_alpha = 0.4;$(13_10)}"
+		var _arr;
+		var _temp;
+		_arr = layer_get_all_elements("Traderoutes");
 		for (var i = 0; i < array_length_1d(_arr); i++) {
 			_temp = layer_instance_get_instance(_arr[i]);
 			_temp.image_alpha = 0.4;

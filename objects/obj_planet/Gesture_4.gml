@@ -34,28 +34,17 @@ if ((l5981DD1F_0 > 0))
 		case "military":
 			/// @DnDAction : YoYo Games.Common.Execute_Script
 			/// @DnDVersion : 1.1
-			/// @DnDHash : 7A596548
-			/// @DnDInput : 2
-			/// @DnDDisabled : 1
-			/// @DnDParent : 41A70B47
-			/// @DnDArgument : "script" "scr_send_fleet"
-			/// @DnDArgument : "arg" "_source_planet_id"
-			/// @DnDArgument : "arg_1" "_target_planet_id"
-			/// @DnDSaveInfo : "script" "9cca30e9-9b64-4319-b331-623fe7c00adb"
-		
-		
-			/// @DnDAction : YoYo Games.Common.Execute_Script
-			/// @DnDVersion : 1.1
 			/// @DnDHash : 3C867774
-			/// @DnDInput : 2
+			/// @DnDInput : 3
 			/// @DnDParent : 41A70B47
 			/// @DnDArgument : "var" "_starlane"
 			/// @DnDArgument : "var_temp" "1"
 			/// @DnDArgument : "script" "scr_check_connected"
 			/// @DnDArgument : "arg" "_source_planet_id"
 			/// @DnDArgument : "arg_1" "_target_planet_id"
+			/// @DnDArgument : "arg_2" "obj_waypoint"
 			/// @DnDSaveInfo : "script" "2f912e45-02ae-409f-8e61-16adb589cc7c"
-			var _starlane = script_execute(scr_check_connected, _source_planet_id, _target_planet_id);
+			var _starlane = script_execute(scr_check_connected, _source_planet_id, _target_planet_id, obj_waypoint);
 		
 			/// @DnDAction : YoYo Games.Common.If_Expression
 			/// @DnDVersion : 1
@@ -63,8 +52,8 @@ if ((l5981DD1F_0 > 0))
 			/// @DnDInput : 2
 			/// @DnDParent : 41A70B47
 			/// @DnDArgument : "expr" "_source_planet_id.owner=="player""
-			/// @DnDArgument : "expr_1" "(_starlane && _starlane.object_index != obj_waypoint) || !_starlane"
-			if(_source_planet_id.owner=="player" && (_starlane && _starlane.object_index != obj_waypoint) || !_starlane)
+			/// @DnDArgument : "expr_1" "((_starlane && _starlane.object_index != obj_waypoint) || !_starlane)"
+			if(_source_planet_id.owner=="player" && ((_starlane && _starlane.object_index != obj_waypoint) || !_starlane))
 			{
 				/// @DnDAction : YoYo Games.Common.Execute_Script
 				/// @DnDVersion : 1.1
@@ -84,23 +73,69 @@ if ((l5981DD1F_0 > 0))
 			/// @DnDParent : 41A70B47
 			else
 			{
-				/// @DnDAction : YoYo Games.Common.If_Expression
+				/// @DnDAction : YoYo Games.Instances.Destroy_Instance
 				/// @DnDVersion : 1
-				/// @DnDHash : 7DAA80DB
-				/// @DnDInput : 2
+				/// @DnDHash : 0BFCCD59
+				/// @DnDApplyTo : _starlane
 				/// @DnDParent : 7AE5A986
-				/// @DnDArgument : "expr" "_starlane"
-				/// @DnDArgument : "expr_1" "_starlane.object_index == obj_waypoint"
-				/// @DnDArgument : "not_1" "1"
-				if(_starlane && !(_starlane.object_index == obj_waypoint))
-				{
-					/// @DnDAction : YoYo Games.Instances.Destroy_Instance
-					/// @DnDVersion : 1
-					/// @DnDHash : 36C9DBCE
-					/// @DnDApplyTo : _starlane
-					/// @DnDParent : 7DAA80DB
-					with(_starlane) instance_destroy();
-				}
+				with(_starlane) instance_destroy();
+			}
+			break;
+	
+		/// @DnDAction : YoYo Games.Switch.Case
+		/// @DnDVersion : 1
+		/// @DnDHash : 7FE186B2
+		/// @DnDParent : 72382CD4
+		/// @DnDArgument : "const" ""economy""
+		case "economy":
+			/// @DnDAction : YoYo Games.Common.Execute_Script
+			/// @DnDVersion : 1.1
+			/// @DnDHash : 5C80962F
+			/// @DnDInput : 2
+			/// @DnDParent : 7FE186B2
+			/// @DnDArgument : "var" "_starlane"
+			/// @DnDArgument : "var_temp" "1"
+			/// @DnDArgument : "script" "scr_check_connected"
+			/// @DnDArgument : "arg" "_source_planet_id"
+			/// @DnDArgument : "arg_1" "_target_planet_id"
+			/// @DnDSaveInfo : "script" "2f912e45-02ae-409f-8e61-16adb589cc7c"
+			var _starlane = script_execute(scr_check_connected, _source_planet_id, _target_planet_id);
+		
+			/// @DnDAction : YoYo Games.Common.If_Expression
+			/// @DnDVersion : 1
+			/// @DnDHash : 1DA49F70
+			/// @DnDInput : 4
+			/// @DnDParent : 7FE186B2
+			/// @DnDArgument : "expr" "(_starlane && _starlane.object_index != obj_traderoute) || !_starlane"
+			/// @DnDArgument : "expr_1" "_source_planet_id.owner=="player""
+			/// @DnDArgument : "expr_2" "_target_planet_id.owner=="player""
+			/// @DnDArgument : "expr_3" "obj_traderoute"
+			if((_starlane && _starlane.object_index != obj_traderoute) || !_starlane && _source_planet_id.owner=="player" && _target_planet_id.owner=="player" && obj_traderoute)
+			{
+				/// @DnDAction : YoYo Games.Common.Execute_Script
+				/// @DnDVersion : 1.1
+				/// @DnDHash : 0BEE240F
+				/// @DnDInput : 2
+				/// @DnDParent : 1DA49F70
+				/// @DnDArgument : "script" "scr_create_traderoute"
+				/// @DnDArgument : "arg" "_source_planet_id"
+				/// @DnDArgument : "arg_1" "_target_planet_id"
+				/// @DnDSaveInfo : "script" "9733ff7a-d2da-48f6-934f-5ac3e876f677"
+				script_execute(scr_create_traderoute, _source_planet_id, _target_planet_id);
+			}
+		
+			/// @DnDAction : YoYo Games.Common.Else
+			/// @DnDVersion : 1
+			/// @DnDHash : 29EBF034
+			/// @DnDParent : 7FE186B2
+			else
+			{
+				/// @DnDAction : YoYo Games.Instances.Destroy_Instance
+				/// @DnDVersion : 1
+				/// @DnDHash : 6ED1DF35
+				/// @DnDApplyTo : _starlane
+				/// @DnDParent : 29EBF034
+				with(_starlane) instance_destroy();
 			}
 			break;
 	
@@ -113,15 +148,16 @@ if ((l5981DD1F_0 > 0))
 			/// @DnDAction : YoYo Games.Common.Execute_Script
 			/// @DnDVersion : 1.1
 			/// @DnDHash : 62104E21
-			/// @DnDInput : 2
+			/// @DnDInput : 3
 			/// @DnDParent : 364FB49C
 			/// @DnDArgument : "var" "_starlane"
 			/// @DnDArgument : "var_temp" "1"
 			/// @DnDArgument : "script" "scr_check_connected"
 			/// @DnDArgument : "arg" "_source_planet_id"
 			/// @DnDArgument : "arg_1" "_target_planet_id"
+			/// @DnDArgument : "arg_2" "obj_starlane"
 			/// @DnDSaveInfo : "script" "2f912e45-02ae-409f-8e61-16adb589cc7c"
-			var _starlane = script_execute(scr_check_connected, _source_planet_id, _target_planet_id);
+			var _starlane = script_execute(scr_check_connected, _source_planet_id, _target_planet_id, obj_starlane);
 		
 			/// @DnDAction : YoYo Games.Common.If_Expression
 			/// @DnDVersion : 1

@@ -119,9 +119,35 @@
             "layers": [
                 {
                     "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+                    "name": "Traderoutes",
+                    "id": "66230bc2-f36c-4d54-8d93-cfdb6fa2cf3c",
+                    "depth": 300,
+                    "grid_x": 24,
+                    "grid_y": 24,
+                    "hierarchyFrozen": false,
+                    "hierarchyVisible": true,
+                    "inheritLayerDepth": false,
+                    "inheritLayerSettings": false,
+                    "inheritSubLayers": false,
+                    "inheritVisibility": false,
+                    "instances": [
+
+                    ],
+                    "layers": [
+
+                    ],
+                    "m_parentID": "00000000-0000-0000-0000-000000000000",
+                    "m_serialiseFrozen": false,
+                    "modelName": "GMRInstanceLayer",
+                    "mvc": "1.0",
+                    "userdefined_depth": false,
+                    "visible": true
+                },
+                {
+                    "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
                     "name": "Starlanes",
                     "id": "740012a2-4cc5-45e5-9693-bcf2a451895d",
-                    "depth": 300,
+                    "depth": 400,
                     "grid_x": 24,
                     "grid_y": 24,
                     "hierarchyFrozen": false,
@@ -147,7 +173,7 @@
                     "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
                     "name": "MilitaryConnections",
                     "id": "acf69773-8822-4ef4-bae0-8585bf68b9d0",
-                    "depth": 400,
+                    "depth": 500,
                     "grid_x": 24,
                     "grid_y": 24,
                     "hierarchyFrozen": false,
@@ -181,7 +207,7 @@
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Influence",
             "id": "dd4a2c7c-30d5-436e-b377-d7024c7ea708",
-            "depth": 500,
+            "depth": 600,
             "grid_x": 24,
             "grid_y": 24,
             "hierarchyFrozen": false,
@@ -210,7 +236,7 @@
             "animationFPS": 15,
             "animationSpeedType": "0",
             "colour": { "Value": 4278190080 },
-            "depth": 600,
+            "depth": 700,
             "grid_x": 24,
             "grid_y": 24,
             "hierarchyFrozen": false,
