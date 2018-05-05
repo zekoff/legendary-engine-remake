@@ -66,18 +66,12 @@ if(_ship)
 		/// @DnDAction : YoYo Games.Common.If_Expression
 		/// @DnDVersion : 1
 		/// @DnDHash : 225BBC1F
+		/// @DnDInput : 2
 		/// @DnDParent : 6D41DB07
 		/// @DnDArgument : "expr" "orbiting == _source_planet_id"
-		if(orbiting == _source_planet_id)
+		/// @DnDArgument : "expr_1" "owner == "player""
+		if(orbiting == _source_planet_id && owner == "player")
 		{
-			/// @DnDAction : YoYo Games.Common.Variable
-			/// @DnDVersion : 1
-			/// @DnDHash : 2F4BDE12
-			/// @DnDParent : 225BBC1F
-			/// @DnDArgument : "expr" "noone"
-			/// @DnDArgument : "var" "orbiting"
-			orbiting = noone;
-		
 			/// @DnDAction : YoYo Games.Common.Execute_Script
 			/// @DnDVersion : 1.1
 			/// @DnDHash : 320ADBFA

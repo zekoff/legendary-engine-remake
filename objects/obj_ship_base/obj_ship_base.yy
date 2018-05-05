@@ -156,7 +156,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": ".5",
+            "value": "0.3",
             "varName": "travel_speed",
             "varType": 0
         },

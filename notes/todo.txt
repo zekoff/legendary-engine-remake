@@ -27,5 +27,5 @@ TODO
 [x] Switch away from tween-based movement
 	[x] Add speed factor to all ships
 	[x] Create paths dynamically between planets
-[ ] Make ships face direction of their movement when travelling on paths
-[ ] Allow starlanes and military waypoints to both exist between a pair of planets
+[x] Make ships face direction of their movement when travelling on paths
+[x] Allow starlanes and military waypoints to both exist between a pair of planets

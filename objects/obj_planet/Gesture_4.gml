@@ -60,9 +60,11 @@ if ((l5981DD1F_0 > 0))
 			/// @DnDAction : YoYo Games.Common.If_Expression
 			/// @DnDVersion : 1
 			/// @DnDHash : 7D87EC41
+			/// @DnDInput : 2
 			/// @DnDParent : 41A70B47
-			/// @DnDArgument : "expr" "!_starlane && _source_planet_id.owner=="player""
-			if(!_starlane && _source_planet_id.owner=="player")
+			/// @DnDArgument : "expr" "_source_planet_id.owner=="player""
+			/// @DnDArgument : "expr_1" "(_starlane && _starlane.object_index != obj_waypoint) || !_starlane"
+			if(_source_planet_id.owner=="player" && (_starlane && _starlane.object_index != obj_waypoint) || !_starlane)
 			{
 				/// @DnDAction : YoYo Games.Common.Execute_Script
 				/// @DnDVersion : 1.1
@@ -82,12 +84,23 @@ if ((l5981DD1F_0 > 0))
 			/// @DnDParent : 41A70B47
 			else
 			{
-				/// @DnDAction : YoYo Games.Instances.Destroy_Instance
+				/// @DnDAction : YoYo Games.Common.If_Expression
 				/// @DnDVersion : 1
-				/// @DnDHash : 36C9DBCE
-				/// @DnDApplyTo : _starlane
+				/// @DnDHash : 7DAA80DB
+				/// @DnDInput : 2
 				/// @DnDParent : 7AE5A986
-				with(_starlane) instance_destroy();
+				/// @DnDArgument : "expr" "_starlane"
+				/// @DnDArgument : "expr_1" "_starlane.object_index == obj_waypoint"
+				/// @DnDArgument : "not_1" "1"
+				if(_starlane && !(_starlane.object_index == obj_waypoint))
+				{
+					/// @DnDAction : YoYo Games.Instances.Destroy_Instance
+					/// @DnDVersion : 1
+					/// @DnDHash : 36C9DBCE
+					/// @DnDApplyTo : _starlane
+					/// @DnDParent : 7DAA80DB
+					with(_starlane) instance_destroy();
+				}
 			}
 			break;
 	
@@ -113,9 +126,12 @@ if ((l5981DD1F_0 > 0))
 			/// @DnDAction : YoYo Games.Common.If_Expression
 			/// @DnDVersion : 1
 			/// @DnDHash : 42F5D069
+			/// @DnDInput : 3
 			/// @DnDParent : 364FB49C
-			/// @DnDArgument : "expr" "!_starlane && _source_planet_id.owner=="player" && _target_planet_id.owner=="player""
-			if(!_starlane && _source_planet_id.owner=="player" && _target_planet_id.owner=="player")
+			/// @DnDArgument : "expr" "(_starlane && _starlane.object_index != obj_starlane) || !_starlane"
+			/// @DnDArgument : "expr_1" "_source_planet_id.owner=="player""
+			/// @DnDArgument : "expr_2" "_target_planet_id.owner=="player""
+			if((_starlane && _starlane.object_index != obj_starlane) || !_starlane && _source_planet_id.owner=="player" && _target_planet_id.owner=="player")
 			{
 				/// @DnDAction : YoYo Games.Common.Execute_Script
 				/// @DnDVersion : 1.1
