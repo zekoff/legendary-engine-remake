@@ -23,6 +23,26 @@
             "enumb": 0,
             "eventtype": 3,
             "m_owner": "91304b6d-a228-42b0-bd20-e30ce93997bf"
+        },
+        {
+            "id": "70c4eecd-1158-4f3c-adce-14acfb310c61",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": true,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 8,
+            "eventtype": 7,
+            "m_owner": "91304b6d-a228-42b0-bd20-e30ce93997bf"
+        },
+        {
+            "id": "cb001574-05a3-47a6-b1e8-dc230956d341",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": true,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 1,
+            "m_owner": "91304b6d-a228-42b0-bd20-e30ce93997bf"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -43,7 +63,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "b6214112-96a7-437a-b0c9-91a1bcca9e9d",
+            "id": "dcd8cf6a-ede8-4226-a0a5-1d4f74225070",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -52,9 +72,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
-            "varName": "orbit_distance",
-            "varType": 0
+            "value": "noone",
+            "varName": "owner",
+            "varType": 2
         },
         {
             "id": "e4acf86b-b48b-4edf-8698-b51ba5877403",
@@ -69,6 +89,20 @@
             "value": "noone",
             "varName": "orbiting",
             "varType": 5
+        },
+        {
+            "id": "b6214112-96a7-437a-b0c9-91a1bcca9e9d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "orbit_distance",
+            "varType": 0
         },
         {
             "id": "9cc3748b-06a7-47a0-a008-256b45ab5ff6",
@@ -113,7 +147,7 @@
             "varType": 0
         },
         {
-            "id": "dcd8cf6a-ede8-4226-a0a5-1d4f74225070",
+            "id": "6d5435c2-b396-4c01-9455-6bec1a6b5f92",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -122,9 +156,23 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "noone",
-            "varName": "owner",
-            "varType": 2
+            "value": ".5",
+            "varName": "travel_speed",
+            "varType": 0
+        },
+        {
+            "id": "fb7dbd62-4791-4487-80ac-09c477fac22b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "travel_target",
+            "varType": 0
         }
     ],
     "solid": false,

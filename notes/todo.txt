@@ -5,13 +5,13 @@ TODO
 [x] Add layer interface
 [x] Add feature to drag between planets
 [ ] Verify that you can't create a starlane with the same planet as start/end point
-[ ] Make ship travel time based on speed/distance, not a fixed frame count
+[x] Make ship travel time based on speed/distance, not a fixed frame count
 [x] GUI button target area doesn't work when GUI space != room space
 [x] Add economy (planets have citizens and generate money)
 [x] Add building/upgrade options for planets
 [x] Add competition/enemies
 [ ] Add AI (enemy ships spawn in waves, and attempt to take over planets too)
-[ ] Add waypoint system
+[x] Add waypoint system
 [ ] Fade ships and things in/out when switching visual layers in UI
 [ ] Implement supplies
 	[ ] Change from farms to factories
@@ -24,6 +24,8 @@ TODO
 	[ ] Planets get captured based on culture
 [ ] Military conflict destroys culture/allegiance
 [ ] Implement starbases/constructions
-[ ] Switch away from tween-based movement
-	[ ] Add speed factor to all ships
-	[ ] Create paths dynamically between planets
+[x] Switch away from tween-based movement
+	[x] Add speed factor to all ships
+	[x] Create paths dynamically between planets
+[ ] Make ships face direction of their movement when travelling on paths
+[ ] Allow starlanes and military waypoints to both exist between a pair of planets

@@ -30,3 +30,7 @@ layer functions must be converted to instances before being used as such.
 
 The other keyword, when used inside a "with" block, refers to the calling context. So no
 more setting up temp variables to hold the id of an instance before calling with inside it.
+
+Programatically-created paths default to closed. Path node speed factor is calibrated for
+a value of 100 (i.e. the path_speed will move that number of pixels per step if path nodes
+have a speed factor of 100).

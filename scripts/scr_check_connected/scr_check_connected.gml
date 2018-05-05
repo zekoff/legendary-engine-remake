@@ -1,3 +1,11 @@
+/// @DnDAction : YoYo Games.Common.Execute_Code
+/// @DnDVersion : 1
+/// @DnDHash : 65805971
+/// @DnDArgument : "code" "/// @desc Check if two planets are connected$(13_10)/// @param {real} planet1 First planet$(13_10)/// @param {real} planet2 Second planet"
+/// @desc Check if two planets are connected
+/// @param {real} planet1 First planet
+/// @param {real} planet2 Second planet
+
 /// @DnDAction : YoYo Games.Common.Temp_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 43F29881
@@ -63,8 +71,8 @@ with(obj_connection_base) {
 		/// @DnDVersion : 1
 		/// @DnDHash : 63F84200
 		/// @DnDParent : 0F3AB0C7
-		/// @DnDArgument : "value" "self"
-		return self;
+		/// @DnDArgument : "value" "id"
+		return id;
 	}
 
 	/// @DnDAction : YoYo Games.Common.Variable

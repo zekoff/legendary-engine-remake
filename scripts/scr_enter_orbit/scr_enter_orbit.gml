@@ -1,4 +1,5 @@
-// argument0 = ship
-// argument1 = planet to orbit
+/// @desc Set ship to orbiting around a target
+/// @param {real} Ship
+/// @param {real} Planet to orbit
 
 argument0.orbiting = argument1;
